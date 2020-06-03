@@ -1,10 +1,14 @@
 # OpticalCharacterRecognition
-A classic problem in computer vision recognizing
-written text through pictures. This project seeks
-to address this, and recognizes latin characters
-via a neural network. It does not exclusively rec-
-ognize the text of a handwritten character from
-a single image of that character. Instead, the
-project identies all characters in an image of
-multiple characters. Simply put, this project is
-an OCR model for the English language.
+A classic problem in computer vision recognizing written text through pictures. 
+
+This problem was tackled in two parts:
+
+## 1. [EMNIST Classification](https://github.com/hxt1965/OpticalCharacterRecognition/blob/master/emnist_classification%20.ipynb) 
+The [EMNIST dataset](https://www.nist.gov/itl/products-and-services/emnist-dataset) was fed into a Sequential Neural Network consisting of 10 layers, namely, 
+ - Conv2D
+ - MaxPooling2D
+ - Dropout
+ - Dense 
+The model achieved an accuracy of 85.86%
+
+## 2. Line Segmentation 
